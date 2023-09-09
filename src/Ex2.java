@@ -17,7 +17,7 @@ public class Ex2 {
         while (scannerNoivo.hasNextLine()) {
             listaNoivo.add(scannerNoivo.nextLine());
         }
-        LinkedList<String> listaConvidados = new LinkedList<String>(listaNoiva);
+        LinkedList<String> listaConvidados = new LinkedList<>(listaNoiva);
 
         for (String nome : listaNoivo) {
             listaConvidados.add(nome);
