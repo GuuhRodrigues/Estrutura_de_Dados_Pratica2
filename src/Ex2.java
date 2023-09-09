@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -18,10 +20,11 @@ public class Ex2 {
             listaNoivo.add(scannerNoivo.nextLine());
         }
         LinkedList<String> listaConvidados = new LinkedList<>(listaNoiva);
-
-        for (String nome : listaNoivo) {
-            listaConvidados.add(nome);
-        }
+//        for (String nome : listaNoivo) {
+//            listaConvidados.add(nome);
+//        }
+        listaConvidados.addAll(listaNoivo);
+        Collections.sort(listaConvidados);
 
         System.out.println("*** Lista de convidados ***");
         for (String nome : listaConvidados) {
